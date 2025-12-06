@@ -48,12 +48,20 @@ export default function Hero() {
                     "Web Design",
                     "Web Development",
                 ].map((skill, i) => (
-                    <p
-                        key={i}
-                        className="text-[9px] sm:text-sm md:text-base lg:text-lg text-gray-700 font-medium tracking-wide"
-                    >
-                        {skill}
-                    </p>
+	                <p key={i} className="text-[9px] sm:text-sm md:text-base lg:text-lg text-gray-700 font-medium tracking-wide">
+  <span
+	  className="relative inline-block
+               before:content-[''] before:absolute before:bottom-0 before:right-0
+               before:h-[2px] before:w-0 before:bg-gray-700
+               before:transition-all before:duration-300
+               hover:before:w-full"
+  >
+    {skill}
+  </span>
+	                </p>
+
+
+
                 ))}
             </div>
         </section>
